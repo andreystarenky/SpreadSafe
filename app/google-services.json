@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "615661339929",
+    "firebase_url": "https://tohacks20.firebaseio.com",
+    "project_id": "tohacks20",
+    "storage_bucket": "tohacks20.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:615661339929:android:f8d7d6493b02baa8e2b188",
+        "android_client_info": {
+          "package_name": "com.starenkysoftware.spreadsafe"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "615661339929-ahieuho46173aekghsl6t1npd8o3i6in.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.starenkysoftware.spreadsafe",
+            "certificate_hash": "d348996665260833b2253ad4a3d799055d0747a2"
+          }
+        },
+        {
+          "client_id": "615661339929-0ims9du7ltbgcaifqcjg70n49rjsp9oq.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyALNHbQ2D90mar85DRVfaPHnIKGMFM0qYY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "615661339929-0ims9du7ltbgcaifqcjg70n49rjsp9oq.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

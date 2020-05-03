@@ -1,0 +1,891 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/reports_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="8dp"
+        android:textAlignment="center"
+        android:textSize="20sp"
+        android:text="All Reports"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/report_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="85dp"
+        android:text="Name"
+        android:textAlignment="center"
+        android:textSize="20sp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/reports_title" />
+
+    <TextView
+        android:id="@+id/report_condition"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="142dp"
+        android:text="Condition"
+        android:textAlignment="center"
+        android:textSize="20sp"
+        app:layout_constraintLeft_toLeftOf="@id/report_name"
+        app:layout_constraintTop_toBottomOf="@id/reports_title" />
+
+    <TextView
+        android:id="@+id/reports_id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="33dp"
+        android:text="ID"
+        android:textAlignment="center"
+        android:textSize="20sp"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/reports_title" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/report_name">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/report_card_1"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginLeft="15dp"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="72dp">
+
+            <ImageView
+                android:id="@+id/list_icon1"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_margin="16dp"
+                android:src="@drawable/oldperson1" />
+
+            <TextView
+                android:id="@+id/report_label_1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentBottom="true"
+                android:textSize="16dp"
+                android:text="Michelle Richards"
+                android:gravity="center_vertical"
+                android:orientation="vertical"
+                android:layout_toRightOf="@+id/list_icon1"
+                android:textColor="@android:color/black" />
+
+            <TextView
+                android:id="@+id/report_sublabel_1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginRight="65dp"
+                android:textSize="14dp"
+                android:text="Mild"
+                android:textAlignment="center"
+                android:gravity="center_vertical"
+                android:orientation="vertical"
+                android:layout_toLeftOf="@+id/report_id_1"
+                android:textColor="@android:color/darker_gray" />
+
+            <TextView
+                android:id="@+id/report_id_1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentEnd="true"
+                android:textSize="14dp"
+                android:text="9734"
+                android:layout_marginRight="10dp"
+                android:gravity="center_vertical"
+                android:orientation="vertical"
+                android:textColor="@android:color/darker_gray" />
+
+        </RelativeLayout>
+
+    </com.google.android.material.card.MaterialCardView>
+    
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/report_card_2"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginLeft="15dp"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/report_card_1">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="72dp">
+
+            <ImageView
+                android:id="@+id/list_icon2"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_margin="16dp"
+                android:src="@drawable/oldperson2" />
+
+            <TextView
+                android:id="@+id/report_label_2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentBottom="true"
+                android:textSize="16dp"
+                android:text="Alexander Jeffords"
+                android:gravity="center_vertical"
+                android:orientation="vertical"
+                android:layout_toRightOf="@+id/list_icon2"
+                android:textColor="@android:color/black" />
+
+            <TextView
+                android:id="@+id/report_sublabel_2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginRight="58dp"
+                android:textSize="14dp"
+                android:text="Critical"
+                android:textAlignment="center"
+                android:gravity="center_vertical"
+                android:orientation="vertical"
+                android:layout_toLeftOf="@+id/report_id_2"
+                android:textColor="@android:color/darker_gray" />
+
+            <TextView
+                android:id="@+id/report_id_2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentEnd="true"
+                android:textSize="14dp"
+                android:text="7392"
+                android:layout_marginRight="10dp"
+                android:gravity="center_vertical"
+                android:orientation="vertical"
+                android:textColor="@android:color/darker_gray" />
+
+        </RelativeLayout>
+
+    </com.google.android.material.card.MaterialCardView>
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/report_card_3"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginLeft="15dp"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/report_card_2">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="72dp">
+
+            <ImageView
+                android:id="@+id/list_icon3"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_margin="16dp"
+                android:src="@drawable/oldperson3" />
+
+            <TextView
+                android:id="@+id/report_label_3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentBottom="true"
+                android:textSize="16dp"
+                android:text="Allen Zhang"
+                android:gravity="center_vertical"
+                android:orientation="vertical"
+                android:layout_toRightOf="@+id/list_icon3"
+                android:textColor="@android:color/black" />
+
+            <TextView
+                android:id="@+id/report_sublabel_3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginRight="50dp"
+                android:textSize="14dp"
+                android:text="Mediocre"
+                android:textAlignment="center"
+                android:gravity="center_vertical"
+                android:orientation="vertical"
+                android:layout_toLeftOf="@+id/report_id_3"
+                android:textColor="@android:color/darker_gray" />
+
+            <TextView
+                android:id="@+id/report_id_3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentEnd="true"
+                android:textSize="14dp"
+                android:text="6827"
+                android:layout_marginRight="10dp"
+                android:gravity="center_vertical"
+                android:orientation="vertical"
+                android:textColor="@android:color/darker_gray" />
+
+        </RelativeLayout>
+
+    </com.google.android.material.card.MaterialCardView>
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/report_card_4"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginLeft="15dp"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/report_card_3">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="72dp">
+
+            <ImageView
+                android:id="@+id/list_icon4"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_margin="16dp"
+                android:src="@drawable/oldperson4" />
+
+            <TextView
+                android:id="@+id/report_label_4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentBottom="true"
+                android:textSize="16dp"
+                android:text="Allison Lena"
+                android:gravity="center_vertical"
+                android:orientation="vertical"
+                android:layout_toRightOf="@+id/list_icon4"
+                android:textColor="@android:color/black" />
+
+            <TextView
+                android:id="@+id/report_sublabel_4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginRight="58dp"
+                android:textSize="14dp"
+                android:text="Critical"
+                android:textAlignment="center"
+                android:gravity="center_vertical"
+                android:orientation="vertical"
+                android:layout_toLeftOf="@+id/report_id_4"
+                android:textColor="@android:color/darker_gray" />
+
+            <TextView
+                android:id="@+id/report_id_4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentEnd="true"
+                android:textSize="14dp"
+                android:text="3018"
+                android:layout_marginRight="10dp"
+                android:gravity="center_vertical"
+                android:orientation="vertical"
+                android:textColor="@android:color/darker_gray" />
+
+        </RelativeLayout>
+
+    </com.google.android.material.card.MaterialCardView>
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/report_card_5"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginLeft="15dp"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/report_card_4">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="72dp">
+
+            <ImageView
+                android:id="@+id/list_icon5"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_margin="16dp"
+                android:src="@drawable/oldperson5" />
+
+            <TextView
+                android:id="@+id/report_label_5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentBottom="true"
+                android:textSize="16dp"
+                android:text="Paul Leningham"
+                android:gravity="center_vertical"
+                android:orientation="vertical"
+                android:layout_toRightOf="@+id/list_icon5"
+                android:textColor="@android:color/black" />
+
+            <TextView
+                android:id="@+id/report_sublabel_5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginRight="58dp"
+                android:textSize="14dp"
+                android:text="Critical"
+                android:textAlignment="center"
+                android:gravity="center_vertical"
+                android:orientation="vertical"
+                android:layout_toLeftOf="@+id/report_id_5"
+                android:textColor="@android:color/darker_gray" />
+
+            <TextView
+                android:id="@+id/report_id_5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentEnd="true"
+                android:textSize="14dp"
+                android:text="8367"
+                android:layout_marginRight="10dp"
+                android:gravity="center_vertical"
+                android:orientation="vertical"
+                android:textColor="@android:color/darker_gray" />
+
+        </RelativeLayout>
+
+    </com.google.android.material.card.MaterialCardView>
+
+    <!-- Repeats -->
+    
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/report_card_6"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginLeft="15dp"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/report_card_5">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="72dp">
+
+            <ImageView
+                android:id="@+id/list_icon_6"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_margin="16dp"
+                android:src="@drawable/oldperson1" />
+
+            <TextView
+                android:id="@+id/report_label_6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentBottom="true"
+                android:textSize="16dp"
+                android:text="Michelle Richards"
+                android:gravity="center_vertical"
+                android:orientation="vertical"
+                android:layout_toRightOf="@+id/list_icon_6"
+                android:textColor="@android:color/black" />
+
+            <TextView
+                android:id="@+id/report_sublabel_6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginRight="50dp"
+                android:textSize="14dp"
+                android:text="Mediocre"
+                android:textAlignment="center"
+                android:gravity="center_vertical"
+                android:orientation="vertical"
+                android:layout_toLeftOf="@+id/report_id_6"
+                android:textColor="@android:color/darker_gray" />
+
+            <TextView
+                android:id="@+id/report_id_6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentEnd="true"
+                android:textSize="14dp"
+                android:text="9734"
+                android:layout_marginRight="10dp"
+                android:gravity="center_vertical"
+                android:orientation="vertical"
+                android:textColor="@android:color/darker_gray" />
+
+        </RelativeLayout>
+
+    </com.google.android.material.card.MaterialCardView>
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/report_card_7"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginLeft="15dp"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/report_card_6">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="72dp">
+
+            <ImageView
+                android:id="@+id/list_icon_7"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_margin="16dp"
+                android:src="@drawable/oldperson2" />
+
+            <TextView
+                android:id="@+id/report_label_7"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentBottom="true"
+                android:textSize="16dp"
+                android:text="Alexander Jeffords"
+                android:gravity="center_vertical"
+                android:orientation="vertical"
+                android:layout_toRightOf="@+id/list_icon_7"
+                android:textColor="@android:color/black" />
+
+            <TextView
+                android:id="@+id/report_sublabel_7"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginRight="58dp"
+                android:textSize="14dp"
+                android:text="Critical"
+                android:textAlignment="center"
+                android:gravity="center_vertical"
+                android:orientation="vertical"
+                android:layout_toLeftOf="@+id/report_id_7"
+                android:textColor="@android:color/darker_gray" />
+
+            <TextView
+                android:id="@+id/report_id_7"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentEnd="true"
+                android:textSize="14dp"
+                android:text="7254"
+                android:layout_marginRight="10dp"
+                android:gravity="center_vertical"
+                android:orientation="vertical"
+                android:textColor="@android:color/darker_gray" />
+
+        </RelativeLayout>
+
+    </com.google.android.material.card.MaterialCardView>
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/report_card_8"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginLeft="15dp"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/report_card_7">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="72dp">
+
+            <ImageView
+                android:id="@+id/list_icon_8"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_margin="16dp"
+                android:src="@drawable/oldperson3" />
+
+            <TextView
+                android:id="@+id/report_label_8"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentBottom="true"
+                android:textSize="16dp"
+                android:text="Allen Zhang"
+                android:gravity="center_vertical"
+                android:orientation="vertical"
+                android:layout_toRightOf="@+id/list_icon_8"
+                android:textColor="@android:color/black" />
+
+            <TextView
+                android:id="@+id/report_sublabel_8"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginRight="65dp"
+                android:textSize="14dp"
+                android:text="Mild"
+                android:textAlignment="center"
+                android:gravity="center_vertical"
+                android:orientation="vertical"
+                android:layout_toLeftOf="@+id/report_id_8"
+                android:textColor="@android:color/darker_gray" />
+
+            <TextView
+                android:id="@+id/report_id_8"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentEnd="true"
+                android:textSize="14dp"
+                android:text="2846"
+                android:layout_marginRight="10dp"
+                android:gravity="center_vertical"
+                android:orientation="vertical"
+                android:textColor="@android:color/darker_gray" />
+
+        </RelativeLayout>
+
+    </com.google.android.material.card.MaterialCardView>
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/report_card_9"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginLeft="15dp"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/report_card_8">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="72dp">
+
+            <ImageView
+                android:id="@+id/list_icon_9"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_margin="16dp"
+                android:src="@drawable/oldperson4" />
+
+            <TextView
+                android:id="@+id/report_label_9"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentBottom="true"
+                android:textSize="16dp"
+                android:text="Allison Lena"
+                android:gravity="center_vertical"
+                android:orientation="vertical"
+                android:layout_toRightOf="@+id/list_icon_9"
+                android:textColor="@android:color/black" />
+
+            <TextView
+                android:id="@+id/report_sublabel_9"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginRight="65dp"
+                android:textSize="14dp"
+                android:text="Mild"
+                android:textAlignment="center"
+                android:gravity="center_vertical"
+                android:orientation="vertical"
+                android:layout_toLeftOf="@+id/report_id_9"
+                android:textColor="@android:color/darker_gray" />
+
+            <TextView
+                android:id="@+id/report_id_9"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentEnd="true"
+                android:textSize="14dp"
+                android:text="8264"
+                android:layout_marginRight="10dp"
+                android:gravity="center_vertical"
+                android:orientation="vertical"
+                android:textColor="@android:color/darker_gray" />
+
+        </RelativeLayout>
+
+    </com.google.android.material.card.MaterialCardView>
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/report_card_10"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginLeft="15dp"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/report_card_9">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="72dp">
+
+            <ImageView
+                android:id="@+id/list_icon_10"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_margin="16dp"
+                android:src="@drawable/oldperson5" />
+
+            <TextView
+                android:id="@+id/report_label_10"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentBottom="true"
+                android:textSize="16dp"
+                android:text="Paul Leningham"
+                android:gravity="center_vertical"
+                android:orientation="vertical"
+                android:layout_toRightOf="@+id/list_icon_10"
+                android:textColor="@android:color/black" />
+
+            <TextView
+                android:id="@+id/report_sublabel_10"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginRight="58dp"
+                android:textSize="14dp"
+                android:text="Critical"
+                android:textAlignment="center"
+                android:gravity="center_vertical"
+                android:orientation="vertical"
+                android:layout_toLeftOf="@+id/report_id_10"
+                android:textColor="@android:color/darker_gray" />
+
+            <TextView
+                android:id="@+id/report_id_10"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentEnd="true"
+                android:textSize="14dp"
+                android:text="5163"
+                android:layout_marginRight="10dp"
+                android:gravity="center_vertical"
+                android:orientation="vertical"
+                android:textColor="@android:color/darker_gray" />
+
+        </RelativeLayout>
+
+    </com.google.android.material.card.MaterialCardView>
+
+            <com.google.android.material.card.MaterialCardView
+                android:id="@+id/report_card_11"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginLeft="15dp"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/report_card_10">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="72dp">
+
+                    <ImageView
+                        android:id="@+id/list_icon_11"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:layout_margin="16dp"
+                        android:src="@drawable/oldperson1" />
+
+                    <TextView
+                        android:id="@+id/report_label_11"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentTop="true"
+                        android:layout_alignParentBottom="true"
+                        android:textSize="16dp"
+                        android:text="Michelle Richards"
+                        android:gravity="center_vertical"
+                        android:orientation="vertical"
+                        android:layout_toRightOf="@+id/list_icon_11"
+                        android:textColor="@android:color/black" />
+
+                    <TextView
+                        android:id="@+id/report_sublabel_11"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentTop="true"
+                        android:layout_alignParentBottom="true"
+                        android:layout_marginRight="50dp"
+                        android:textSize="14dp"
+                        android:text="Mediocre"
+                        android:textAlignment="center"
+                        android:gravity="center_vertical"
+                        android:orientation="vertical"
+                        android:layout_toLeftOf="@+id/report_id_11"
+                        android:textColor="@android:color/darker_gray" />
+
+                    <TextView
+                        android:id="@+id/report_id_11"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentTop="true"
+                        android:layout_alignParentBottom="true"
+                        android:layout_alignParentEnd="true"
+                        android:textSize="14dp"
+                        android:text="9734"
+                        android:layout_marginRight="10dp"
+                        android:gravity="center_vertical"
+                        android:orientation="vertical"
+                        android:textColor="@android:color/darker_gray" />
+
+                </RelativeLayout>
+
+            </com.google.android.material.card.MaterialCardView>
+
+            <com.google.android.material.card.MaterialCardView
+                android:id="@+id/report_card_12"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginLeft="15dp"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/report_card_11">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="72dp">
+
+                    <ImageView
+                        android:id="@+id/list_icon_12"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:layout_margin="16dp"
+                        android:src="@drawable/oldperson2" />
+
+                    <TextView
+                        android:id="@+id/report_label_12"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentTop="true"
+                        android:layout_alignParentBottom="true"
+                        android:textSize="16dp"
+                        android:text="Alexander Jeffords"
+                        android:gravity="center_vertical"
+                        android:orientation="vertical"
+                        android:layout_toRightOf="@+id/list_icon_12"
+                        android:textColor="@android:color/black" />
+
+                    <TextView
+                        android:id="@+id/report_sublabel_12"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentTop="true"
+                        android:layout_alignParentBottom="true"
+                        android:layout_marginRight="58dp"
+                        android:textSize="14dp"
+                        android:text="Critical"
+                        android:textAlignment="center"
+                        android:gravity="center_vertical"
+                        android:orientation="vertical"
+                        android:layout_toLeftOf="@+id/report_id_12"
+                        android:textColor="@android:color/darker_gray" />
+
+                    <TextView
+                        android:id="@+id/report_id_12"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentTop="true"
+                        android:layout_alignParentBottom="true"
+                        android:layout_alignParentEnd="true"
+                        android:textSize="14dp"
+                        android:text="4823"
+                        android:layout_marginRight="10dp"
+                        android:gravity="center_vertical"
+                        android:orientation="vertical"
+                        android:textColor="@android:color/darker_gray" />
+
+                </RelativeLayout>
+
+            </com.google.android.material.card.MaterialCardView>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
